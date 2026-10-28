@@ -16,7 +16,7 @@ services:
       retries: 10
 
   backend:
-    build: ./backend
+    image: arin01/fest-backend:1.0.0
     environment:
       DB_HOST: db
       DB_NAME: ${POSTGRES_DB}
@@ -50,3 +50,4 @@ networks:
   frontend_backend:
   backend_db:
     internal: true
+
